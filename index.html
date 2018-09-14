@@ -5,77 +5,16 @@
 
     <!-- #1 #structure #title -->
     <title>chatter|app</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="style.css">
 
     <!-- We need to specify the character encoding, since we use chinese characters -->
     <meta charset="UTF-8">
 
     <!-- #2 #css #elements -->
     <style>
-
-        /* #2 #colorful #palette is:
-          * Background: #F5F5F5 (GREY 100)
-          * Primary Text: black
-
-          * Primary color: #3F51B5 (INDIGO)
-          * Primary color_text : white
-          * Accent color: #CDDC39 (LIME)
-          * Accent color_text: black
-          */
-
-        /*global styles */
-        * {
-            /* #2 #font #faces */
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            /* #2 #colorful #background */
-            background-color: #F5F5F5;
-        }
-
-        h1 {
-            /* #2 #colourful #app-bar */
-            background-color: #3F51B5;
-            color: white;
-        }
-
-        button {
-            /* #2 #colourful #plusfive */
-            background-color: #CDDC39;
-            color: black;
-            /* #2 #font capital #letters */
-            text-transform: uppercase;
-        }
-
-
-        /*styles for channel area*/
-        h2 {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
-
-        /*styles for chat area*/
-        p {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
-
-        strong {
-            /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
-            text-transform: uppercase;
-        }
-
-        h3 {
-            /* #2 #font #metadata is now medium */
-            font-size: medium;
-        }
-
-        em {
-            /* #2 #font #remaining overrides the default italic appearance of em elements*/
-            font-size: larger;
-            font-style: normal;
-        }
-
+    
     </style>
 
 </head>
@@ -84,18 +23,15 @@
 
 <!-- channel area -->
 <!-- #1 #channels #app-bar -->
-
-<!-- #1 #channels #topics -->
-    <div>
-        <img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="moocus" height="56px">
+    <div id = "app bar" style="width: 20%" >
         <div>
-            <img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="moocus" height="56px"><h1>chatter|app</h1>
+            <h1> <img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="moocus" height="56px">chatter|app</h1>
                 <ul style="list-style-type:none">
-                    <li>#Yummy <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="o star" height="30px"></li> 
-                    <li>#SevenContinents <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star" height="30px"></li>
-                    <li>#KillerApp <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="o star" height="30px"></li>
-                    <li>#FirstPersonOnMars <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star" height="30px"></li>
-                    <li>#Octoberfest <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="o star" height="30x"></li>
+                    <li>#Yummy <img class=" OstarIcon" src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="o star" height="20px"></li> 
+                    <li>#SevenContinents <img class="starIcon" src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star" height="20px"></li>
+                    <li>#KillerApp <img class=" OstarIcon" src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="o star" height="20px"></li>
+                    <li>#FirstPersonOnMars <img class="starIcon" src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star" height="20px"></li>
+                    <li>#Octoberfest <img class=" OstarIcon" src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="o star" height="20x"></li>
                 </ul>
         </div>
 
@@ -103,23 +39,25 @@
         <div style = "background-color: white">
             <button
                 type="button" 
-
+                class= "channelbutton"
                 > 
-                <img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb" height="15px">   
+                <img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb" height="10px">   
                 New 
             </button>    
                 <button
                 type="button" 
+                class= "channelbutton"
 
                 > 
-                <img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire" height="15px">   
+                <img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire" height="10px">   
                 Trending
                 </button>   
                 <button
                 type="button" 
+                class= "channelbutton"
 
                 > 
-                <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star" height="15px">   
+                <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star" height="10px">   
                 Favorites
             </button>   
         
@@ -127,36 +65,36 @@
     </div>
 <!-- chat area -->
 <!-- #1 #chat #name -->
-    <div>
+    <div  id = "channels" style="width: 80%">
         <h1>#SevenContinentes by cheeses.yard.applies</h1>
            <ul style="list-style-type:none">
                 <div style="width: 80%" >
-                    <li>cheeses.yard.applies Wed, June 20th, 13:37 <i>15 min left</i></li>
+                    <li class="w3w"><a href="https://map.what3words.com/gelbes.beinen.freudige" target="_blank" alt = "w3w map" style = "color: black" >cheeses.yard.applies</a>, Wed June 20th, 13:37 <i>15 min left</i></li>
                         <p>Whats the place you folks call home</p>
                         <button type="button">+5 min</button>
                 </div>
                 <div style="width: 80%">
-                    <li>truck.cotton.zone Wed, June 20th 13:39 <i>4 min left</i> </li>
+                    <li class="w3w"><a href="https://map.what3words.com/gelbes.beinen.freudige" target="_blank" alt = "w3w map" style = "color: black">truck.cotton.zone</a>  Wed, June 20th 13:39 <i>4 min left</i> </li>
                         <p>BRISBANE! Hang loose!</p>
                         <button type="button">+5 min</button>
                 </div>
                 <div style="width: 80%">
-                    <li>thus best dishes Wed, June 20th 14:02 <i>12 min left</i></li>
+                    <li class="w3w"><a href="https://map.what3words.com/gelbes.beinen.freudige" target="_blank" alt = "w3w map" style = "color: black">thus best dishes</a> Wed, June 20th 14:02 <i>12 min left</i></li>
                         <p>The big apple.</p>
                         <button type="button">+5 min</button>
                 </div>
                 <div style="width: 80%">
-                    <li>driveway.helper.magazine Wed, June 20th 14:02 <i>7 min left</i></li>
+                    <li class="w3w"><a href="https://map.what3words.com/gelbes.beinen.freudige" target="_blank" alt = "w3w map" style = "color: black">driveway.helper.magazine</a> Wed, June 20th 14:02 <i>7 min left</i></li>
                         <p>Eu sou um Carocas</p>
                         <button type="button">+5 min</button>
                 </div>
                 <div style="width: 80%">
-                    <li>escapes.pitch.saucepan Wed, June 20th 14:07 <i>14 min left</i></li>
+                    <li class="w3w"><a href="https://map.what3words.com/gelbes.beinen.freudige" target="_blank" alt = "w3w map" style = "color: black">escapes.pitch.saucepan</a> Wed, June 20th 14:07 <i>14 min left</i></li>
                         <p>Greetings from the western cape!</p>
                         <button type="button">+5 min</button>
                 </div>
                 <div style="width: 80%">
-                    <li>meanings.identify.pays Wed, June 20th 14:07 <i>14 min left</i></li>
+                    <li class="w3w"><a href="https://map.what3words.com/gelbes.beinen.freudige" target="_blank" alt = "w3w map" style = "color: black">meanings.identify.pays</a> Wed, June 20th 14:07 <i>14 min left</i></li>
                         <p>你好</p>
                         <button type="button">+5 min</button>
                 </div>
